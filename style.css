@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+/* Computer */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #191919;
@@ -117,8 +117,7 @@ input[type=text], input[type=password] {
 }
 .row{
     margin-top: 20px;
-    height: 90px;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.277); */
+    height: 115px;
 }
 .row p{
     margin-left: 15px;
@@ -129,16 +128,13 @@ input[type=text], input[type=password] {
     
 }
 .row-image{
-    vertical-align: middle;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+    width: 75px;
+    height: 75px;
+    border-radius:50%;
+    object-fit: cover;
     margin-right: 10px;
     transition: transform 450ms;
     padding: 2px;
-
-
     /* rounded-corners-gradient borders */
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3b8ea5,#f5ee9e);
     background-origin: border-box;
@@ -150,26 +146,56 @@ input[type=text], input[type=password] {
     overflow-x: scroll;
     margin-left: 15px;
     padding-top: 10px;
-    padding-right: 20px;
-
-
 }
+
+
 .row-image:hover{
     transform: scale(1.18);
 }
 .row-images::-webkit-scrollbar{
     display: none;
 }
-.w3-btn{
+.button-container{
+    width: 100%;
+}
+.main-buttons{
+    margin: 0 auto;
+    text-align: center;
+}
+input[type=submit]{
     text-decoration: none;
-    border: 1px solid #3b8ea5;
-    background: #3b8ea5;
-    border-radius: 5px;
+    border: 1px solid #3b8ea58b;
+    background: #3b8ea58b;
+    border-radius: 2px;
     color: #fff;
-    margin-left: 13px;
     letter-spacing: 0.15em;
     padding: 6px 25px;
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 10px;
     cursor: pointer    
+} 
+/* On screens that are 992px or less, set the background color to blue */
+/* Tablets */
+@media screen and (max-width: 992px) {
+    body {
+      /* background-color: blue; */
+    }
+  }
+
+/* On screens that are 600px or less, set the background color to olive */
+/* current iphones */
+@media screen and (max-width: 600px) {
+    
+    .w3-btn{
+            text-decoration: none;
+            border: 1px solid #3b8ea5;
+            background: #3b8ea5;
+            border-radius: 5px;
+            color: #fff;
+            margin-left: 13px;
+            letter-spacing: 0.15em;
+            padding: 6px 25px;
+            font-size: 12px;
+            margin-top: 10px;
+            cursor: pointer    
+  }
 }
