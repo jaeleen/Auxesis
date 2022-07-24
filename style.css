@@ -138,10 +138,14 @@ input[type=text], input[type=password] {
 }
 
 /* Styling feed images */
+.feed{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
 .feed-box{
 	width:100%;
     height: auto;
-    display: -ms-flexbox; /* IE10 */
 }
 .avatar {
     align-items: center;
@@ -191,20 +195,16 @@ input[type=submit]{
 /* On screens that are 992px or less, set the background color to blue */
 /* Tablets */
 @media screen and (max-width: 992px) {
-    .imgbox{
-        -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    .feed{
+        grid-template-columns: 1fr;
     }
   }
 
 /* On screens that are 600px or less, set the background color to olive */
 /* current iphones */
 @media screen and (max-width: 600px) {
-    .imgbox{
-        -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+    .feed{
+        grid-template-columns: 1fr;
     }
     .w3-btn{
             text-decoration: none;
