@@ -97,24 +97,6 @@ input[type=text], input[type=password] {
     font-size: 10px;
 
 }
-.avatar {
-    vertical-align: middle;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #191919;
-    padding: 2px;
-    margin: 10px;
-    /* rounded-corners-gradient borders */
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #Ab3428,#F49E4c);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
-.avatar-name{
-    font-size: 12px;
-    font-weight: 400;
-    margin-left: 15px;
-}
 .row{
     margin-top: 20px;
     height: 115px;
@@ -148,13 +130,46 @@ input[type=text], input[type=password] {
     padding-top: 10px;
 }
 
-
 .row-image:hover{
     transform: scale(1.18);
 }
 .row-images::-webkit-scrollbar{
     display: none;
 }
+
+/* Styling feed images */
+.feed-box{
+	width:100%;
+    height: auto;
+    display: -ms-flexbox; /* IE10 */
+}
+.avatar {
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.499);
+    padding: 2px;
+    background: #191919;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.avatar-box{
+    display: inline-block;
+}
+.avater-text{
+    display: inline-block;
+    font-size: 12px;
+}
+.imgbox{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.new-post{
+    width: 100%;
+}
+
 .button-container{
     width: 100%;
 }
@@ -176,15 +191,21 @@ input[type=submit]{
 /* On screens that are 992px or less, set the background color to blue */
 /* Tablets */
 @media screen and (max-width: 992px) {
-    body {
-      /* background-color: blue; */
+    .imgbox{
+        -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
     }
   }
 
 /* On screens that are 600px or less, set the background color to olive */
 /* current iphones */
 @media screen and (max-width: 600px) {
-    
+    .imgbox{
+        -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
     .w3-btn{
             text-decoration: none;
             border: 1px solid #3b8ea5;
