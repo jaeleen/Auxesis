@@ -80,9 +80,12 @@ input[type=text], input[type=password] {
     font-family: 'Exo bold', sans-serif ;
     margin: auto;
     margin-top: 10px;
-    text-align: right;
     padding: 10px;
     letter-spacing: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+        /* background-color: red; */
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.122);
 }
 .left-logo h1{
     color: #AB3428;
@@ -99,37 +102,74 @@ input[type=text], input[type=password] {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    /* border: 2px solid #AB3428; */
     background: #191919;
-    /* padding: 3px; */
+    padding: 2px;
     margin: 10px;
+    /* rounded-corners-gradient borders */
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #Ab3428,#F49E4c);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.avatar-name{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 15px;
 }
 .row{
     margin-top: 20px;
+    height: 90px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.277); */
 }
-.row h2{
-    margin-left: 20px;
-    font-size: 11px;
+.row p{
+    margin-left: 15px;
+    font-size: 10px;
     letter-spacing: 0.09em;
-    opacity: 0.6;
+    opacity: 0.4;
+    font-family: 'Exo bold', sans-serif ;
+    
 }
 .row-image{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    vertical-align: middle;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     margin-right: 10px;
     transition: transform 450ms;
+    padding: 2px;
+
+
+    /* rounded-corners-gradient borders */
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3b8ea5,#f5ee9e);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 .row-images{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 10px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-right: 20px;
+
+
 }
 .row-image:hover{
     transform: scale(1.18);
 }
 .row-images::-webkit-scrollbar{
     display: none;
+}
+.w3-btn{
+    text-decoration: none;
+    border: 1px solid #3b8ea5;
+    background: #3b8ea5;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 13px;
+    letter-spacing: 0.15em;
+    padding: 6px 25px;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer    
 }
