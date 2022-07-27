@@ -141,46 +141,27 @@ input[type=text], input[type=password] {
 }
 
 /* Styling feed images */
+.card {
+    color: white;
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+    transition: transform 450ms;
+}
 .feed{
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    gap: 1rem;
 }
-.feed-box{
-	width:100%;
-    height: auto;
-}
-.avatar {
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.499);
-    padding: 2px;
-    background: #191919;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.avatar-box{
-    display: inline-block;
-}
-.avater-text{
-    display: inline-block;
-    font-size: 12px;
-}
-.imgbox{
-    height: auto;
+.card-img{
     width: 100%;
-    overflow: hidden;
-}
-.new-post{
-    width: 100%;
+    object-fit: contain;
+    max-height: 300px;
+    margin-right: 10px;
 }
 
-.feed-icons{
-    align-items: right;
-}
-
+/* Buttons**************************** */
 .button-container{
     width: 100%;
 }
@@ -202,16 +183,15 @@ input[type=submit]{
 /* On screens that are 992px or less, set the background color to blue */
 /* Tablets */
 @media screen and (max-width: 992px) {
-    .feed{
-        grid-template-columns: 1fr;
-    }
+   
   }
 
-/* On screens that are 600px or less, set the background color to olive */
-/* current iphones */
-@media screen and (max-width: 600px) {
+/* Responsive design for larger screen sizes -> TABLET */
+
+@media screen and (min-width: 600px) {
+   
     .feed{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3,1fr);
     }
     .w3-btn{
             text-decoration: none;
@@ -227,3 +207,16 @@ input[type=submit]{
             cursor: pointer    
   }
 }
+
+/* Responsive design for screens larger than 900 pixels -> LAPTOP */
+@media screen and (min-width:900px){
+    .feed{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+
+/* ********************BONUS! Eliminate media queries with minmax() */
+/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ */
