@@ -164,7 +164,7 @@ input[type=text], input[type=password] {
     color: white;
     width: 100%;
     height: 550px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     transition: transform 450ms;
 }
 .feed{
