@@ -76,7 +76,9 @@ input[type=text], input[type=password] {
     font-size: 14px;
 }
 /*************** END Log in Page styling *****************/
-
+.main-container{
+    overflow: hidden; /* Hide scrollbars */
+}
 
 /* Styling image carousel */
 .left-logo{
@@ -142,7 +144,7 @@ input[type=text], input[type=password] {
 
 /* Styling feed images */
 .card {
-    /* background-color: #000000; */
+    background-color: #000000;
     color: white;
     padding: 0.5rem;
     width: 100%;
