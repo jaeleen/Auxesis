@@ -142,10 +142,11 @@ input[type=text], input[type=password] {
 
 /* Styling feed images */
 .card {
+    /* background-color: #000000; */
     color: white;
     padding: 0.5rem;
     width: 100%;
-    height: auto;
+    height: 500px;
     transition: transform 450ms;
 }
 .feed{
@@ -156,8 +157,8 @@ input[type=text], input[type=password] {
 }
 .card-img{
     width: 100%;
-    object-fit: contain;
-    max-height: 300px;
+    object-fit: cover;
+    max-height: 500px;
     margin-right: 10px;
 }
 
