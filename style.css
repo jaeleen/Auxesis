@@ -185,6 +185,21 @@ input[type=text], input[type=password] {
     padding-top: 5px;
 }
 /************************Styling viewprofile ***************/
+.bio-box{
+    display: flex;
+    margin-top: 15px;
+    padding: 5px;
+}
+.bio-img-box{
+    width: 20%;
+}
+#uname{
+    font-size: 14px;
+    padding: 5px;
+}
+#caption{
+    font-size: 12px;
+}
 .box {
     border-top: 1px solid #555555;
     color: white;
@@ -207,8 +222,9 @@ input[type=text], input[type=password] {
 
 /* Buttons**************************** */
 .button-container{
-    width: 100%;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 70%;
+    margin-bottom: 0px;
 }
 .main-buttons{
     margin: 0 auto;
@@ -266,3 +282,30 @@ input[type=submit]{
 /* ********************BONUS! Eliminate media queries with minmax() */
 /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
  */
+
+ /*********** Bottom Nav ****************/
+
+.navbar {
+    overflow: hidden;
+    background: #191919;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+.navbar a {
+    float: left;
+    color: #ECDBBA;
+    padding: 14px 26px;
+    margin-right: 0px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    color: #C84B31;
+}
+  
+.navbar a.active {
+    color: #C84B31;
+}
