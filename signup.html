@@ -11,22 +11,30 @@
 <body>
     <header>
         <div class="logo">
-          <h1>AUXESIS</h1>
-          <p>FITNESS</p>
+          <h1>Auxesis</h1>
+          <!-- <p>fitness</p> -->
         </div>
       </header>
       <div class="container">
-        <p id="instruction">Fill this form to SignUp for your account.</p>
-    
-        <form action="login.html" id="LogIn" method="post">
+        <div class="instruction-container">
+          <h2>Set up your account</h2>
+          <p id="instruction">Axesis is personalized for you. Join the board today.</p>  
+        </div>
+        <form action="/login.html" id="SignUp" method="post">
           <div class="login-container">
+            <!-- <div class="form-field">
+              <label for="file-upload" class="custom-file-upload">
+                <i class="fa fa-cloud-upload"></i> Choose Avatar
+              </label>
+              <input id="file-upload" type="file" /> 
+            </div> -->
             <div class="form-field">
               <label for="email">Email Address</label>
               <input type="text" id="email" name="email"/>
             </div>
             <div class="form-field">
-              <label for="uname">Username</label>
-              <input type="text" id="uname" name="uname"/>
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username"/>
             </div>
             <div class="form-field">
                 <label for="uname">Password</label>
@@ -37,7 +45,7 @@
                 <input type="password" id="password-confirm" name="password-confirm"/>
               </div> 
             <div class="form-submit">
-              <input type="submit" class="submit" value="SIGN UP">
+              <input type="submit" class="link" value="Create account">
             </div>
           </div>
         </form>
