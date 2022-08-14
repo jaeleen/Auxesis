@@ -3,13 +3,41 @@
     box-sizing: border-box;
     margin: 0;
 }
-/* Computer */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
     color: #000000;
 }
+ /*********** Bottom Nav ****************/
 
+ .bottom-navigation {
+    overflow: hidden;
+    background: #fff;
+    border-top: 0.5px solid #a0a0a0;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+}
+  
+.bottom-navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+
+}
+  
+.bottom-navigation a:hover {
+    color: #AB3428;
+}
+  
+.bottom-navigation a.active {
+    color: #AB3428;
+}
+/*********************** END *******************************************/
 /*************** Log in Page styling *****************/
 .logo{
     font-family: 'Caveat', cursive;
@@ -45,7 +73,7 @@ body{
 }
 .login-container{
     /* background-color: #000000; */
-    height: 450px;
+    height: 350px;
     margin-top: 50px;
 }
 label{
@@ -87,18 +115,18 @@ input[type=text], input[type=password] {
     align-items: center;
 }
 
-#instruction-bottom{
+.instruction-bottom{
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
 }
-#instruction-bottom a{
+.instruction-bottom a{
     text-decoration: none;
     font-weight: 800;
     color: #2d728f;
 }
-/*************** END Log in Page styling *****************/
 
+/*********************** END *******************************************/
 /*************** BEGIN Index.html*****************/
 
 .main-container{
@@ -165,7 +193,7 @@ input[type=text], input[type=password] {
 .row-images::-webkit-scrollbar{
     display: none;
 }
-
+/*********************** END *******************************************/
 /* Styling feed images */
 .avatar-box{
     margin-top: 10px;
@@ -208,18 +236,26 @@ input[type=text], input[type=password] {
     padding-bottom: 10px;
     padding-top: 5px;
 }
+/*********************** END *******************************************/
 /************************Styling viewprofile ***************/
 .bio-box{
     display: flex;
+    justify-content:  space-between;
     margin-top: 15px;
-    padding: 5px;
+    padding: 0px;
 }
 .bio-img-box{
-    width: 20%;
+    margin: auto;
+    text-align: center;
 }
 #uname{
+    margin-top: -5px;
     font-size: 14px;
-    padding: 5px;
+    /* padding: 5px; */
+}
+
+.caption-box{
+    margin-bottom: 100px;
 }
 #caption{
     font-size: 12px;
@@ -265,7 +301,7 @@ input[type=text], input[type=password] {
     font-size: 10px;
     cursor: pointer    
 } 
-
+/*********************** END *******************************************/
 /* Responsive design for larger screen sizes -> TABLET */
 
 @media screen and (min-width: 600px) {
@@ -307,29 +343,3 @@ input[type=text], input[type=password] {
 /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
  */
 
- /*********** Bottom Nav ****************/
-
-.navbar {
-    overflow: hidden;
-    background: #191919;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-.navbar a {
-    float: left;
-    color: #ECDBBA;
-    padding: 14px 26px;
-    margin-right: 0px;
-    text-decoration: none;
-    font-size: 17px;
-}
-  
-.navbar a:hover {
-    color: #C84B31;
-}
-  
-.navbar a.active {
-    color: #C84B31;
-}
