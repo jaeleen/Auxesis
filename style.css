@@ -98,6 +98,9 @@ input[type=text], input[type=password] {
     color: #2d728f;
 }
 /*************** END Log in Page styling *****************/
+
+/*************** BEGIN Index.html*****************/
+
 .main-container{
     overflow: hidden; /* Hide scrollbars */
 }
@@ -108,11 +111,10 @@ input[type=text], input[type=password] {
     margin: auto;
     margin-top: 10px;
     padding: 10px;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     display: flex;
     justify-content: space-between;
-        /* background-color: red; */
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.122);
+    /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.122); */
 }
 .left-logo h1{
     color: #AB3428;
@@ -182,7 +184,7 @@ input[type=text], input[type=password] {
 
 }
 .card {
-    border-top: 1px solid #555555;
+    /* border-top: 1px solid #555555; */
     color: white;
     width: 100%;
     height: 550px;
@@ -223,7 +225,7 @@ input[type=text], input[type=password] {
     font-size: 12px;
 }
 .box {
-    border-top: 1px solid #555555;
+    /* border-top: 1px solid #555555; */
     color: white;
     width: 100%;
     height: 100px;
