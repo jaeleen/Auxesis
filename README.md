@@ -3,8 +3,6 @@
 
 # Auxesis - Photo sharing app (css animations, js, mysql, php, json, ajax)
 
-Auxesis is a free photo sharing web app.
-#Description
  
  ## Table of contents 
    - [The challenge](#the-challenge)
