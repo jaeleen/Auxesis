@@ -197,31 +197,59 @@ input[type=text], input[type=password] {
     display: none;
 }
 /*********************** END *******************************************/
-/* Styling feed images */
+/* Styling mainfeed images */
+.first-card{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.parent-grid{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+.text-box{
+    margin: 20px;
+    margin-left: 5px;
+}
+.avatar-text{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 900;
+}
+.avatar-text span{
+    color: #a0a0a0;
+    font-size: 14px;
+}
+.caption{
+    font-size: 14px;
+    padding-left: 4px;
+
+}
+.new-post{
+    /* margin-top: -10px; */
+    margin-left: 25px;
+}
+.pin-count{
+    color: #000000;
+    font-size: 12px;
+    padding: 3px;
+}
+
 .avatar-box{
     margin-top: 10px;
 }
 .avatar{
-    width: 40px;
-    height: 40px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
-    vertical-align: sub;
 }
 .username{
-    display: inline-block;
+    text-align: center;
     padding: 5px;
     font-size: 14px;
-    color: #a0a0a0;
+    color: black;
 
 }
-.card {
-    /* border-top: 1px solid #555555; */
-    color: white;
-    width: 100%;
-    height: 550px;
-    margin-bottom: 50px;
-    transition: transform 450ms;
-}
+
 .feed{
     max-width: 1200px;
     margin: 0 auto;
@@ -234,9 +262,9 @@ input[type=text], input[type=password] {
     max-height: 500px;
 }
 .avatar-icons i{
-    color: #000000;
+    color: #2d728f;
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 5px;
 }
