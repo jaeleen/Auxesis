@@ -333,7 +333,47 @@ input[type=text], input[type=password] {
     font-size: 10px;
     cursor: pointer    
 } 
+
 /*********************** END *******************************************/
+/************************Styling workout list *************/
+.workout-box{
+    max-width: 400px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+#heading {
+    /* background-color: #A683E3; */
+    text-align: center;
+}
+.workouts {
+    min-height: 70px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #F1F1F1;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.workouts p{
+    margin: 0;
+    font-size: 14px;
+    padding: 10px;
+}
+.workout-title i{
+    color: #a0a0a0;
+    padding: 12px;
+    font-size: 18px;
+}
+#a-pin{
+    color: #AB3428;
+}
+
+
+
+
+
 /* Responsive design for larger screen sizes -> TABLET */
 
 @media screen and (min-width: 600px) {
