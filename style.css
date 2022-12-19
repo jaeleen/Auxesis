@@ -3,11 +3,68 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
     color: #000000;
 }
+
+.topnav {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #0F52BA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .topnav a.active {
+    /* background-color: #04AA6D; */
+    color: #0F52BA;
+    font-size: 25px;
+  }
+  .topnav a:hover {
+    background-color: #0F52BA;
+    color: #fff;
+    
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  /**********************************************************/
  /*********** Bottom Nav ****************/
 
  .bottom-navigation {
@@ -110,11 +167,19 @@ input[type=text], input[type=password] {
     justify-content: center;
     align-items: center;
 }
+.bottom-nav{
+    margin-top: -100px;
 
-.instruction-bottom{
+}
+.signup-inst {
     text-align: center;
     margin-top: 100px;
-    font-size: 14px;
+    font-size: 12px;
+}
+.instruction-bottom{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
 }
 .instruction-bottom a{
     text-decoration: none;
@@ -132,28 +197,16 @@ input[type=text], input[type=password] {
 
 /* Styling image carousel */
 .left-logo{
-    font-family: 'Caveat', cursive;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    letter-spacing: 0rem;
-    display: flex;
-    justify-content: space-between;
-    /* border-bottom: 0.5px solid rgba(255, 255, 255, 0.122); */
+    font-family: proxima-nova, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #0F52BA;
 }
-.left-logo h1{
-    color: #AB3428;
-}
-.left-logo p{
-    color: #2d728f;
-    font-size: 10px;
 
-}
-.left-logo i{
-    font-size: 20px;
-}
+
+
 .row{
-    margin-top: 20px;
+    /* margin-top: 10px; */
     height: 115px;
 }
 .row p{
